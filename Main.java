@@ -185,7 +185,7 @@ class Main {
 
     //If cards have same value, ask if player wants to have 2 at the table.
     String split = " ";
-    //if(table.get(player).get(0).getValue() == table.get(player).get(1).getValue()){
+    if(table.get(player).get(0).getValue() == table.get(player).get(1).getValue()){
       System.out.println("Would you like to split your hand? (y/n)");
       while(!validInput(split)){
         split = scan.next();
@@ -202,7 +202,7 @@ class Main {
         checkBlackJack(player);
         table.put(playerSplit,drawCards(table.get(playerSplit),playerSplit));
       }
-    //}
+    }
     checkBlackJack(player);
     displayTable(table,true);
     table.put(player,drawCards(table.get(player),player));
