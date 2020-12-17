@@ -211,7 +211,6 @@ class Main {
     displayTable(table,false);
     //Draw random cards until Dealer's hand value is at least 17
     table.put(dealer,drawCards(table.get(dealer),dealer));
-    System.out.println("Calculating");
     boolean possTie = false;
     if(values.get(dealer) == 21){
     //If Dealer equals 21: Lose
