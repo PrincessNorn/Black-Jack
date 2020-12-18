@@ -157,8 +157,6 @@ class Main {
     }
   }
 
-  public static void winCheck(){}
-
   public static void main(String[] args) {
     String dealer="dealer",player="player",playerSplit="";
     //Jack Queen King 10
